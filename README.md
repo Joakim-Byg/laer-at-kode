@@ -5,7 +5,7 @@ Idéen er her at, hvis man følger instrukserne her, så får man en introduktio
 ## Kom igang (til Windows)
 Du skal bruge nogle værktøjer for at lave kode og programmer til din computer.
 Først skal du downloade og installere nogle programmer:
-1. Python er et programmerings-sprog, som vi skal lave vores programmer med. Brug &#8862; (windows-knappen) og skriv "Store" og åben Microoft Store og søg efter "Python" og installer det,
+1. Python er et programmerings-sprog, som vi skal lave vores programmer med. Brug &#8862; eller ❖ (windows-knappen) og skriv "Store" og åben "Microoft Store" og brug søgefeltet til at skrive "Python" + ↵ og vælg 3.12 eller nyere,
    eller brug evt linket her: https://apps.microsoft.com/search?query=python&hl=en-GB&gl=DK
 2. Installer Visual Studio Code, som er lidt lige som MS Word eller Notes til programmering. Gå til https://code.visualstudio.com/download og vælg Windows.
    Efter filen er downloadet, skal du installere den nye fil.
