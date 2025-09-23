@@ -51,7 +51,7 @@ Kan du få programmet til også at spørge om alder eller yndlingsfarve og bruge
 ## Øvelse 2: Lav en simpel lommeregner 🧮
 Denne øvelse viser, at computere er utroligt gode (og hurtige) til matematik.
 
-Hvad det lærer: At konvertere tekst til tal (int()) og simple matematiske operatorer (+, -, *).
+Hvad det lærer: At konvertere tekst til tal (`int()`) og simple matematiske operatorer (`+`, `-`, `*`).
 
 Koden:
 
