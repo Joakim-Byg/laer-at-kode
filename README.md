@@ -7,36 +7,42 @@ Du skal bruge nogle værktøjer for at lave kode og programmer til din computer.
 Først skal du downloade og installere nogle programmer:
 1. _Python_ er et programmerings-sprog, som vi skal lave vores programmer med. Du kan vælge tilgang **a)** eller **b)**:
    
-   **a)** Brug &#8862; eller ❖ (windows-knappen) og skriv "Store" og åben "Microoft Store" og brug søgefeltet til at skrive "Python" + ↵ og hent 3.12 eller nyere.
+   **a)** Brug &#8862; eller ❖ (windows-knappen) og skriv "Store" og åben "Microoft Store" og brug søgefeltet til at
+   skrive "Python" + ↵ og hent 3.12 eller nyere.
 
    **b)** Alternativt kan man downloade python fra: https://apps.microsoft.com/search?query=python&hl=en-GB&gl=DK
-2. Nu skal du installere _Visual Studio Code_, som er lidt lige som MS Word eller Notes til programmering. Du kan enten tilgang **a)** eller **b)**:
+2. Nu skal du installere _Visual Studio Code_, som er lidt lige som MS Word eller Notes til programmering. Du kan enten
+   tilgang **a)** eller **b)**:
    
-   **a)** Brug "Microsoft Store" lige som i punkt 1.**a)** men søg på "vs code" + ↵ og installer "den blå" _Visual Studio Code_.
+   **a)** Brug "Microsoft Store" lige som i punkt 1.**a)** men søg på "vs code" + ↵ og installer "den blå" 
+   _Visual Studio Code_.
 
-   **b)** Alternativt går du til https://code.visualstudio.com/download og vælg Windows. Efter filen er downloadet, skal du installere den nye fil.
+   **b)** Alternativt går du til https://code.visualstudio.com/download og vælg Windows. Efter filen er downloadet, skal 
+   du installere den nye fil.
 
 ## Øvelse 1: Få computeren til at tale med dig 🤖
-Dette er den klassiske "Hello, World!", men gjort personlig. Det viser, at et program kan tage imod input og reagere på det.
+Dette er den klassiske "Hello, World!", men gjort personlig. Det viser, at et program kan tage imod input og reagere på
+det.
 
-Hvad det lærer: input(), print() og variable.
+Hvad det lærer: `input()`, `print()` og variabler.
 
 Koden:
-```python
 
+```python
 # Spørg brugeren om deres navn og gem det i en variabel
 navn = input("Hej! Hvad hedder du? ")
 
 # Svar brugeren med en personlig hilsen
 print("Fedt navn, " + navn + "! Jeg er en computer. Dejligt at møde dig.")
+```
 Sådan virker det:
 
-input() pauser programmet og venter på, at brugeren skriver noget og trykker Enter.
-```
+`input()` pauser programmet og venter på, at brugeren skriver noget og trykker Enter.
+
 
 Det, brugeren skriver, bliver gemt i "hukommelsen" med mærkatet navn. Dette kaldes en variabel.
 
-print() skriver en besked ud på skærmen. Her sætter vi teksten sammen med indholdet af navn-variablen.
+`print()` skriver en besked ud på skærmen. Her sætter vi teksten sammen med indholdet af navn-variablen.
 
 Prøv selv:
 
@@ -49,8 +55,7 @@ Hvad det lærer: At konvertere tekst til tal (int()) og simple matematiske opera
 
 Koden:
 
-```Python
-
+```python
 print("Lad os regne lidt!")
 
 # Spørg om det første tal
@@ -68,19 +73,19 @@ print("Resultatet af " + tal1_tekst + " + " + tal2_tekst + " er: " + str(resulta
 
 Sådan virker det:
 
-input() læser altid det, du skriver, som tekst.
+`input()` læser altid det, du skriver, som tekst.
 
-For at kunne regne med tallene, må vi oversætte dem fra tekst til heltal med int().
+For at kunne regne med tallene, må vi oversætte dem fra tekst til heltal med `int()`.
 
-Derefter kan vi lægge dem sammen med + og gemme resultatet.
+Derefter kan vi lægge dem sammen med `+` og gemme resultatet.
 
-Til sidst oversætter vi resultatet tilbage til tekst med str() for at kunne printe det pænt.
+Til sidst oversætter vi resultatet tilbage til tekst med `str()` for at kunne printe det pænt.
 
 Prøv selv:
 
-Kan du ændre koden, så den ganger (*) eller trækker fra (-) i stedet for?
+Kan du ændre koden, så den ganger (`*`) eller trækker fra (`-`) i stedet for?
 
-## Øvelse 4: Lav dine egne filer og mapper 📁✍️
+## Øvelse 3: Lav dine egne filer og mapper 📁✍️
 Denne øvelse er virkelig fed, fordi den viser, hvordan et program kan interagere med selve computerens filsystem.
 
 Hvad det lærer: At interagere med operativsystemet via os-biblioteket.
@@ -88,7 +93,6 @@ Hvad det lærer: At interagere med operativsystemet via os-biblioteket.
 Koden:
 
 ```Python
-
 # Importer os-biblioteket, der kan tale med computerens system
 import os
 
@@ -112,25 +116,28 @@ print("Der er nu skrevet en besked i filen 'min_fil.txt' inde i din nye mappe.")
 ```
 Sådan virker det:
 
-os.mkdir() er kommandoen til at lave en ny mappe (mkdir = make directory).
+`os.mkdir()` er kommandoen til at lave en ny mappe (`mkdir` = make directory).
 
-open(filsti, "w") åbner (eller opretter) en fil og gør den klar til at blive skrevet til ("w" står for write).
+`open(filsti, "w")` åbner (eller opretter) en fil og gør den klar til at blive skrevet til ("`w`" står for write).
 
-fil.write() skriver den angivne tekst ind i filen.
+`fil.write()` skriver den angivne tekst ind i filen.
 
 Resultat:
-Efter at have kørt koden, vil der ligge en ny mappe i samme mappe som Python-programmet. Inde i den mappe ligger der en ny tekstfil med den besked, du har skrevet! Det er en meget konkret og synlig effekt af ens kode.
+Efter at have kørt koden, vil der ligge en ny mappe i samme mappe som Python-programmet. Inde i den mappe ligger der en 
+ny tekstfil med den besked, du har skrevet! Det er en meget konkret og synlig effekt af ens kode.
 
-Disse øvelser skulle give en god fornemmelse for den magi, der ligger i at kunne give en computer instrukser. Held og lykke!
+Disse øvelser skulle give en god fornemmelse for den magi, der ligger i at kunne give en computer instrukser. Held og 
+lykke!
 
-## Øvelse 1: Lav en skør historie (Mad Libs) 🤪📖
-Denne øvelse er fantastisk, fordi den er kreativ og resultatet næsten altid er komisk. Den bygger videre på idéen om at bruge input() til at skabe noget personligt.
+## Øvelse 4: Lav en skør historie (Mad Libs) 🤪📖
+Denne øvelse er fantastisk, fordi den er kreativ og resultatet næsten altid er komisk. Den bygger videre på idéen om at
+bruge input() til at skabe noget personligt.
 
 Hvad det lærer: Flere variable og en moderne måde at formatere tekst på (f-strings).
 
 Koden:
 
-Python
+```python
 
 print("Hjælp mig med at skrive en historie!")
 
@@ -146,11 +153,13 @@ print("\n--- Din skøre historie ---")
 historie = f"Den {adjektiv} drage {udsagnsord} altid med sine {navneord}, især når den er {sted}!"
 
 print(historie)
+```
 Sådan virker det:
 
 Vi indsamler en række ord og gemmer dem i hver deres variabel.
 
-Linjen historie = f"..." bruger en f-string. Bogstavet f foran citationstegnet lader os indsætte variable direkte i teksten ved at bruge { }-klammer. Det er en meget pænere måde at bygge strenge på end at bruge +.
+Linjen `historie = f"..."` bruger en f-string. Bogstavet `f` foran citationstegnet lader os indsætte variable direkte i 
+teksten ved at bruge `{ }`-klammer. Det er en meget pænere måde at bygge strenge på end at bruge `+`.
 
 Til sidst printes den færdige, og sandsynligvis meget mærkelige, historie.
 
@@ -158,17 +167,17 @@ Prøv selv:
 
 Lav din helt egen historie-skabelon med endnu flere ord, der skal indsættes.
 
-Kan du lave en historie, der fylder flere linjer? (Hint: du kan bruge \n til at lave et linjeskift i en string).
+Kan du lave en historie, der fylder flere linjer? (Hint: du kan bruge `\n` til at lave et linjeskift i en string).
 
-## Øvelse 2: Gæt mit hemmelige tal 🔢🤔
-Dette er en klassiker og en perfekt introduktion til spil-logik. Computeren "tænker" på et tal, og brugeren skal gætte det. Det viser, hvordan kode kan bruge logik og tilfældighed.
+## Øvelse 5: Gæt mit hemmelige tal 🔢🤔
+Dette er en klassiker og en perfekt introduktion til spil-logik. Computeren "tænker" på et tal, og brugeren skal gætte 
+det. Det viser, hvordan kode kan bruge logik og tilfældighed.
 
-Hvad det lærer: At importere random-biblioteket, while-løkker og if/elif/else-betingelser.
+Hvad det lærer: At importere `random`-biblioteket, `while`-løkker og `if`/`elif`/`else`-betingelser.
 
 Koden:
 
-Python
-
+```Python
 # Importer biblioteket, der kan lave tilfældige tal
 import random
 
@@ -188,17 +197,19 @@ gæt = int(gæt_tekst)
     else:
         print(f"Korrekt! Det hemmelige tal var {hemmeligt_tal}. Godt gået!")
         break # Stopper løkken
+```
 Sådan virker det:
 
-import random giver os adgang til en værktøjskasse med funktioner til tilfældighed.
+`import random` giver os adgang til en værktøjskasse med funktioner til tilfældighed.
 
-random.randint(1, 20) beder computeren finde et tilfældigt heltal mellem 1 og 20.
+`random.randint(1, 20)` beder computeren finde et tilfældigt heltal mellem 1 og 20.
 
-while True: starter en uendelig løkke. Koden inden i den vil køre igen og igen.
+`while True:` starter en uendelig løkke. Koden inden i den vil køre igen og igen.
 
-if/elif/else er programmets "hjerne". Den tjekker, om gættet er for lavt (<), for højt (>) eller helt rigtigt (else).
+`if`/`elif`/`else` er programmets "hjerne". Den tjekker, om gættet er for lavt (`<`), for højt (`>`) eller helt rigtigt 
+(`else`).
 
-break er nøgleordet, der "bryder ud" af den uendelige løkke, når det rigtige tal er gættet.
+`break` er nøgleordet, der "bryder ud" af den uendelige løkke, når det rigtige tal er gættet.
 
 Prøv selv:
 
@@ -207,15 +218,15 @@ Kan du ændre koden, så det hemmelige tal er mellem 1 og 100?
 Kan du tilføje en tæller, der holder styr på, hvor mange forsøg brugeren har brugt, og printe det til sidst?
 
 
-## Sten, Saks, Papir mod computeren 🗿✂️📄
-Denne øvelse lærer, hvordan man kan lade computeren vælge tilfældigt fra en liste og derefter sammenligne resultaterne baseret på spillets regler.
+## Øvelse 6: Sten, Saks, Papir mod computeren 🗿✂️📄
+Denne øvelse lærer, hvordan man kan lade computeren vælge tilfældigt fra en liste og derefter sammenligne resultaterne
+baseret på spillets regler.
 
-Hvad det lærer: Lister, random.choice(), og mere avanceret if/elif/else-logik med and og or.
+Hvad det lærer: Lister, `random.choice()`, og mere avanceret `if`/`elif`/`else`-logik med `and` og `or`.
 
 Koden:
 
-Python
-
+```Python
 # Importer biblioteket, der kan lave tilfældige valg
 import random
 
@@ -241,43 +252,43 @@ print("Tillykke, du vandt! 🎉")
 
 else:
 print("Øv, computeren vandt. Bedre held næste gang! 🤖")
-
+```
 Sådan virker det:
 
-mulige_valg = ["sten", "saks", "papir"]: Vi laver en liste (en samling af ting) med de tre mulige træk. Lister skrives i [ ]-klammer.
+mulige_valg = `["sten", "saks", "papir"]`: Vi laver en liste (en samling af ting) med de tre mulige træk. Lister skrives
+i `[ ]`-klammer.
 
-random.choice(mulige_valg): Denne smarte funktion vælger et tilfældigt element direkte fra den liste, vi lige har lavet. Det er perfekt til det her spil.
+`random.choice(mulige_valg):` Denne smarte funktion vælger et tilfældigt element direkte fra den liste, vi lige har 
+lavet. Det er perfekt til det her spil.
 
-.lower(): Denne lille funktion bagefter input() sørger for, at uanset om brugeren skriver "Sten", "STEN" eller "sten", bliver det altid lavet om til små bogstaver. Det gør vores if-tjek meget nemmere.
+`.lower():` Denne lille funktion bagefter `input()` sørger for, at uanset om brugeren skriver `"Sten"`, `"STEN"` eller 
+`"sten"`, bliver det altid lavet om til små bogstaver. Det gør vores `if`-tjek meget nemmere.
 
 Logikken:
 
-Først tjekker vi for det nemmeste: en uafgjort (if spiller_valg == computer_valg).
+Først tjekker vi for det nemmeste: en uafgjort (`if spiller_valg == computer_valg`).
 
-Dernæst kommer den store betingelse (elif). Her tjekker vi for alle de måder, spilleren kan vinde på:
+Dernæst kommer den store betingelse (`elif`). Her tjekker vi for alle de måder, spilleren kan vinde på:
 
-Sten slår saks (and)
+Sten slår saks (`and`)
 
-ELLER (or)
+ELLER (`or`)
 
-Saks slår papir (and)
+Saks slår papir (`and`)
 
-ELLER (or)
+ELLER (`or`)
 
-Papir slår sten (and)
+Papir slår sten (`and`)
 
-Hvis ingen af de ovenstående er sande (else), er der kun én mulighed tilbage: Computeren har vundet.
+Hvis ingen af de ovenstående er sande (`else`), er der kun én mulighed tilbage: Computeren har vundet.
 
 Prøv selv:
 
-Hvad sker der, hvis du staver forkert? Kan du tilføje et if-tjek i starten, der fortæller brugeren, hvis de har skrevet et ugyldigt valg?
+Hvad sker der, hvis du staver forkert? Kan du tilføje et `if`-tjek i starten, der fortæller brugeren, hvis de har 
+skrevet et ugyldigt valg?
 
-Kan du putte hele koden (fra trin 2 og ned) ind i en while True:-løkke, så man kan spille igen og igen? (Husk at give brugeren en mulighed for at skrive "stop" for at komme ud af løkken).
+Kan du putte hele koden (fra trin 2 og ned) ind i en while `True:`-løkke, så man kan spille igen og igen? (Husk at give
+brugeren en mulighed for at skrive `"stop"` for at komme ud af løkken).
 
-For de seje: Kan I lave en scoretavle? Opret to variable, spiller_score = 0 og computer_score = 0 før løkken starter, og tilføj +1 til den rigtige vinder i hver runde. Print scoren efter hvert spil.
-
-
-
-
-
-
+For de seje: Kan I lave en scoretavle? Opret to variable, `spiller_score = 0` og `computer_score = 0` før løkken 
+starter, og tilføj `+1` til den rigtige vinder i hver runde. Print scoren efter hvert spil.
