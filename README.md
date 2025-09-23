@@ -7,7 +7,7 @@ Du skal bruge nogle værktøjer for at lave kode og programmer til din computer.
 Først skal du downloade og installere nogle programmer:
 1. _Python_ er et programmerings-sprog, som vi skal lave vores programmer med. Du kan vælge tilgang **a)** eller **b)**:
    
-   **a)** Brug &#8862; eller ❖ (windows-knappen) og skriv "Store" og åben "Microoft Store" og brug søgefeltet til at
+   **a)** Brug &#8862; eller ❖ (windows-knappen) og skriv "Store" og åben "Microsoft Store" og brug søgefeltet til at
    skrive "Python" + ↵ og hent 3.12 eller nyere.
 
    **b)** Alternativt kan man downloade python fra: https://apps.microsoft.com/search?query=python&hl=en-GB&gl=DK
